@@ -1,0 +1,12 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: java-rest-service
+  annotations:
+    "backstage.io/kubernetes-label-selector": "app.kubernetes.io/part-of=java-rest-service"
+spec:
+  type: service
+  lifecycle: experimental
+  owner: default-team
+  providesApis:
+    - java-rest-service
